@@ -35,7 +35,7 @@ export default {
         return { infoList: [],unloaded:true };
     },
     mounted() {
-        axios.get('<backend>/api/userdetail?data=' + this.name).then(res => {
+        axios.get('https://service-p528ksmj-1306888085.cd.apigw.tencentcs.com/api/userdetail?data=' + this.name).then(res => {
             this.unloaded = false;
             this.infoList = res['data'];
         });

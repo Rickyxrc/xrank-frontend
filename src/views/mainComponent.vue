@@ -29,7 +29,7 @@ export default {
   },
   methods: {},
   mounted() {
-    axios.get('<backend>/api/user').then(res => {
+    axios.get('https://service-p528ksmj-1306888085.cd.apigw.tencentcs.com/api/user').then(res => {
       this.unloaded = false;
       this.rankList = res.data;
     })
