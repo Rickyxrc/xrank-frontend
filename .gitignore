@@ -1,0 +1,7 @@
+# temp dir
+node_modules/
+dist/
+
+# tencent serverless
+scf_bootstrap
+serverless.yml
